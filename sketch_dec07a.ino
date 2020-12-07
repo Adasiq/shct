@@ -1,3 +1,5 @@
+#define leftSensor 2 // левый датчик линии
+
 void setup() {
   // put your setup code here, to run once:
   pinMode(12, OUTPUT);
