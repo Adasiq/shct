@@ -2,11 +2,11 @@
 #define leftSensor 2       // левый датчик линии
 #define rightSensor 4      // правый датчик линии
 //===============================================
-#define leftMotor 11       //левый мотор
-#define rightMotor 10      //правый мотор
+#define leftMotor1 11       //левый мотор
+#define rightMotor1 10      //правый мотор
 
-#define rightMotor1 9       //левый мотор
-#define rightMotor2 6
+#define rightMotor2 9       //левый мотор
+#define leftMotor2 6
 //===============================================
 void setup() {
   //=============================================
