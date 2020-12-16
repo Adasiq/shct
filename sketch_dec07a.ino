@@ -3,6 +3,9 @@
 //===============================================
 #define leftMotor 11       //левый мотор
 #define rightMotor 10      //правый мотор
+
+#define rightMotor1 9       //левый мотор
+#define rightMotor2 6
 //===============================================
 void setup() {
   //=============================================
@@ -39,11 +42,17 @@ void setup() {
   //=============================================
   Serial.println("motors testing...");
   for (size_t i = 0; i < 255; i++) {
-     analogWrite(leftMotor, i);
-     analogWrite(rightMotor, i);
+     analogWrite(leftMotor1, i);
+     analogWrite(rightMotor1, i);
      delay(10);
   }
-  Serial.println("motors tested!")
+
+     for (size_t i = 255; i >1; i--) {
+   analogWrite(leftMotor1, i);
+   analogWrite(rightMotor1, i);
+   delay(10);
+   }
+  Serial.println("motors tested!");
 }
 
 void loop() {
